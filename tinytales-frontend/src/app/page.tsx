@@ -81,7 +81,7 @@ export default function Home() {
       characters: characterLength
     }
 
-    const generateStoryRes = await fetch(`http://127.0.0.1:8000/story_creation`, {
+    const generateStoryRes = await fetch(`https://tinytales-backend.onrender.com/story_creation`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -121,7 +121,7 @@ export default function Home() {
 
   useEffect(() => {
     async function callAPi() {
-      await fetch("https://tinytales-backend-lablab.onrender.com/", {
+      await fetch("https://tinytales-backend.onrender.com/", {
         method: "GET",
         headers: {
           "Content-Type": "application/json"
