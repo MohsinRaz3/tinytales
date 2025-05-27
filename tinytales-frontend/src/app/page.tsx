@@ -237,7 +237,7 @@ export default function Home() {
                   onClick={handleStoryGeneration}
                   className="flex justify-center items-center gap-3 w-full max-w-96 py-4 bg-[#026E78] rounded-md mx-auto cursor-pointer hover:bg-[#028a96] hover:scale-105 transition-transform duration-300 ease-out shadow-lg hover:shadow-xl group"
                 >
-                  <span className="text-white text-lg font-semibold">Create Tale</span>
+                  <span className="text-white text-lg font-semibold">Create Tales</span>
                   <Image
                     src="/images/magicStick.svg"
                     height={35}
