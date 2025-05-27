@@ -4,7 +4,8 @@ services:
     env: docker
     plan: free
     dockerContext: ./tinytales-frontend
-    dockerfilePath: ./Dockerfile
+    dockerfilePath: tinytales-frontend/Dockerfile
+
     autoDeploy: true
     envVars:
       - key: NEXT_PUBLIC_API_URL
