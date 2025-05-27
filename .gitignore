@@ -1,0 +1,70 @@
+# =====================
+# Global Ignores
+# =====================
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# =====================
+# Docker
+# =====================
+docker-compose.override.yml
+*.local
+
+# =====================
+# Python (backend)
+# =====================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg-info/
+.Python
+venv/
+backend/venv/
+tinytales-backend/venv/
+tinytales-backend/__pycache__/
+lib/__pycache__/
+tinytales-backend/.vscode/
+
+# =====================
+# Node.js (frontend)
+# =====================
+node_modules/
+frontend/node_modules/
+.pnp/
+.pnp.js
+.yarn/install-state.gz
+
+# Build outputs
+/build
+/tinytales-frontend/.next/
+/tinytales-frontend/out/
+/tinytales-backend/.vscode/
+# TypeScript
+*.tsbuildinfo
+frontend/next-env.d.ts
+
+# Coverage
+/coverage
+
+# Misc
+*.pem
+
+# Vercel
+.vercel
+
+# Render
+.render/
+
+# TinyTales Custom
+.tinytales-env

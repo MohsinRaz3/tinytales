@@ -1,0 +1,10 @@
+
+# Ignore .env files in both backend and frontend
+.tinytales-env
+backend/.env
+.env
+__pycache__
+lib/__pycache__
+tinytales-backend/__pycache__
+tinytales-backend/venv
+tiny-venv

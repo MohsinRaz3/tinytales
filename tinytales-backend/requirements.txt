@@ -1,0 +1,11 @@
+fastapi==0.109.2
+uvicorn==0.30.4
+requests==2.32.3
+fastapi-cors==0.0.6
+pydantic>=2.6.1
+b2sdk==2.5.0
+openai==1.82.0
+elevenlabs==2.1.0
+python-dotenv==1.0.1
+fal-client==0.7.0
+typing-extensions>=4.8.0

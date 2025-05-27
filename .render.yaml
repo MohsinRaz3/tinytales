@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: story-app
+    env: docker
+    plan: free
+    dockerContext: .
+    dockerfilePath: ./tinytales-frontend/Dockerfile
+    buildCommand: docker compose build
+    startCommand: docker compose up
+    autoDeploy: true
