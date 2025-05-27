@@ -3,9 +3,8 @@ services:
     name: tinytales-frontend
     env: docker
     plan: free
-    build:
-      context: ./tinytales-frontend
-      dockerfilePath: Dockerfile
+    dockerContext: ./tinytales-frontend
+    dockerfilePath: ./Dockerfile
     autoDeploy: true
     envVars:
       - key: NEXT_PUBLIC_API_URL
@@ -15,15 +14,13 @@ services:
     name: tinytales-backend
     env: docker
     plan: free
-    build:
-      context: ./tinytales-backend
-      dockerfilePath: Dockerfile
+    dockerContext: ./tinytales-backend
+    dockerfilePath: ./Dockerfile
     autoDeploy: true
     envVars:
-      - key: PORT
-        value: 8000
-      - key: HOST
-        value: 0.0.0.0
       - key: ENV
         value: production
-      # Add more env vars or use dashboard secrets if needed
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 8000
