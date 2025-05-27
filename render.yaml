@@ -16,7 +16,7 @@ services:
     env: docker
     plan: free
     dockerContext: ./tinytales-backend
-    dockerfilePath: ./Dockerfile
+    dockerfilePath: tinytales-backend/Dockerfile
     autoDeploy: true
     envVars:
       - key: ENV
