@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['fal.media'], // Add the external domain here
+        domains: ['fal.media', 'v3.fal.media'], 
     },
 };
 
