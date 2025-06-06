@@ -5,7 +5,8 @@ fastapi-cors==0.0.6
 pydantic>=2.6.1
 b2sdk==2.5.0
 openai==1.82.0
-elevenlabs==2.1.0
+speechify-api==1.2.0
+#elevenlabs==2.1.0
 python-dotenv==1.0.1
 fal-client==0.7.0
 typing-extensions>=4.8.0

@@ -1,13 +1,13 @@
 # TinyTales - AI-Powered Story Generator
 
-**TinyTales** is an AI-powered micro-SaaS platform that generates engaging **audio stories**. Built during the lablab.ai hackathon, TinyTales leverages cutting-edge AI technologies like **ChatGPT**, **ElevenLabs** to deliver delightful storytelling experiences through a user-friendly web interface.
+**TinyTales** is an AI-powered micro-SaaS platform that generates engaging **audio stories**. Built during the lablab.ai hackathon, TinyTales leverages cutting-edge AI technologies like **ChatGPT**, **Speechify API** to deliver delightful storytelling experiences through a user-friendly web interface.
 
 ---
 
 ## 🚀 Key Features
 
 - 🎙 **AI Story Generation** – Automatically generate captivating story scripts using ChatGPT.
-- 🔊 **Audio Story Creation** – Convert the generated script into lifelike audio using ElevenLabs Voice AI.
+- 🔊 **Audio Story Creation** – Convert the generated script into lifelike audio using Speechify API Voice AI.
 - 🎞 **Image Generation** – Generate visually engaging images using FluxAI.
 - 🖥 **Easy-to-Use UI** – Clean, modern interface built with Next.js and Tailwind CSS.
 - 🔁 **Automation & Integration** – Orchestrated backend using FastAPI and Docker for seamless interaction between services.
@@ -18,7 +18,7 @@
 
 | Layer | Technologies |
 |-------|--------------|
-| **AI Services** | ChatGPT, ElevenLabs, LumaLabs/FluxAI |
+| **AI Services** | ChatGPT, Speechify API, LumaLabs/FluxAI |
 | **Frontend** | Next.js, Tailwind CSS |
 | **Backend** | FastAPI (Python) |
 | **Storage** | BlazeBucket |
@@ -47,7 +47,7 @@ The backend coordinates the entire generation process:
 
 1. **Prompt Submission**: Users enter a story idea on the frontend.
 2. **Script Generation**: The prompt is sent to ChatGPT for story generation.
-3. **Audio Creation**: The script is converted into audio via ElevenLabs.
+3. **Audio Creation**: The script is converted into audio via Speechify API.
 4. **Storage & Delivery**: Assets are saved in BlazeBucket and sent back to the frontend.
 
 ---
@@ -60,7 +60,7 @@ Below is a high-level flow of how TinyTales works:
 
 1. **Start** – User provides a text prompt.
 2. **ChatGPT** – Generates the story script.
-3. **ElevenLabs** – Converts the script into an audio file.
+3. **Speechify API** – Converts the script into an audio file.
 4. **LumaLabs** – Creates a video thumbnail.
 5. **Output** – Both assets are returned and shown in the UI.
 
@@ -82,8 +82,10 @@ Below is a high-level flow of how TinyTales works:
 
 Thanks to these amazing contributors for building TinyTales:
 
-- [**Shahzoor Khan**](https://github.com/shahzoor123) – Full-stack development, backend API integrations
-- [**Ahsan Khan**](https://github.com/AhsanKhan47) – Frontend development, UI/UX enhancements
+| Name | GitHub Profile | Role & Contributions |
+|------|----------------|---------------------|
+| **Shahzoor Khan** | [@shahzoor123](https://github.com/shahzoor123) | Full-stack development, backend API integrations |
+| **Ahsan Khan** | [@AhsanKhan47](https://github.com/AhsanKhan47) | Frontend development, UI/UX enhancements |
 
 ---
 

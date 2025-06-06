@@ -41,6 +41,7 @@ tinytales-backend/.vscode/
 # =====================
 node_modules/
 frontend/node_modules/
+tinytales-frontend/node_modules/
 .pnp/
 .pnp.js
 .yarn/install-state.gz
