@@ -3,8 +3,8 @@
 
 import os
 import io
-import uuid
-from dotenv import load_dotenv
+# import uuid
+# from dotenv import load_dotenv
 from b2sdk.v2 import InMemoryAccountInfo, B2Api
 from fastapi import HTTPException
 

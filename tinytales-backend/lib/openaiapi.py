@@ -4,7 +4,7 @@ import uuid
 from openai import OpenAI
 from dotenv import load_dotenv
 from lib.backblaze import upload_audio
-from lib.elevenlab import audio_generator
+from lib.speechifyapi import audio_generator
 from lib.fluximage import flux_image_gen
 
 load_dotenv()
@@ -131,6 +131,10 @@ IMPORTANT: Your response MUST be valid JSON. Do not include any text before or a
             audio_script = " ".join(result_result)
             
             audio_file = await audio_generator(audio_script)
+            if audio_file is None:
+                print("Audio generation failed")
+                return None
+                
             file_name = f"RT{uuid.uuid4()}.mp3"
             backblaze_bucket = await upload_audio(audio_file,file_name, content_type="audio/mpeg")
             

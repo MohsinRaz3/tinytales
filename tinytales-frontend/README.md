@@ -1,8 +1,6 @@
-
-
 # TinyTales - AI-Powered Story Generator
 
-TinyTales is an AI-powered micro-SaaS platform that generates engaging audio stories and accompanying video thumbnails based on user-provided text prompts. This project was created for the lablab.ai hackathon using ElevenLabs Voice AI and various other technologies.
+TinyTales is an AI-powered micro-SaaS platform that generates engaging audio stories and accompanying video thumbnails based on user-provided text prompts. This project was created for the lablab.ai hackathon using Speechify API Voice AI and various other technologies.
 
 ## Key Features
 
@@ -26,7 +24,7 @@ TinyTales is an AI-powered micro-SaaS platform that generates engaging audio sto
 The project leverages the following technologies:
 
 - **ChatGPT**: For generating story scripts based on user prompts.
-- **ElevenLabs**: To synthesize high-quality audio stories from the generated script.
+- **Speechify API**: To synthesize high-quality audio stories from the generated script.
 - **Lumalabs/Fluxai**: To create custom video thumbnails for the stories.
 - **BlazeBucket**: Storage solution for saving generated content (audio & video).
 - **Next.js**: Front-end framework for building the user interface.
@@ -39,7 +37,7 @@ The flow of TinyTales is simple yet powerful:
 
 1. **User Input**: The user provides a text prompt via the Next.js UI.
 2. **ChatGPT Script Generation**: The prompt is passed to ChatGPT to generate a script or story.
-3. **ElevenLabs Audio Story Generation**: ElevenLabs takes the generated script and creates an audio version.
+3. **Speechify API Audio Story Generation**: Speechify API takes the generated script and creates an audio version.
 4. **Lumalabs Video Thumbnail Generation**: Simultaneously, a video thumbnail is created using Lumalabs/Fluxai.
 5. **Output**: The system returns both a short video thumbnail and an MP3 audio file of the story.
 
@@ -51,7 +49,7 @@ The following flowchart outlines the core process of TinyTales:
 
 - **Start**: The user begins by entering a prompt.
 - **ChatGPT**: Generates a script or story from the input prompt.
-- **ElevenLabs**: Converts the story into an audio format.
+- **Speechify API**: Converts the story into an audio format.
 - **Lumalabs**: Generates a video thumbnail for the content.
 - **Output**: Both the audio story and thumbnail are provided to the user.
 
